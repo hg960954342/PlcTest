@@ -26,7 +26,7 @@ namespace PlcTest
         {
             var ip = textBox1.Text;
             plc.Connect(SiemensPLCS.S300, ip);
-            var conn = Common.PLC1.SiementsConnection();
+            var conn = Common.PLC1.SiementsConnection();//999
             if (conn)
             {
                 button1.BackColor = Color.Green;
